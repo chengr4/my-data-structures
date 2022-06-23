@@ -31,4 +31,4 @@ Delete element from min heap eg
 
 ## References
 
-1. 
+1. [Binary Heaps (Min/Max Heaps) in JavaScript For Beginners An Implementation of a Priority Queue; (2021.2)](https://youtu.be/ifNlv0N5wT8)
