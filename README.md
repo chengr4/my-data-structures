@@ -1,6 +1,7 @@
 # My Data Structures
 
 - [Heap](./heap)
+- [Tree](./tree/)
 
 ## References
 
