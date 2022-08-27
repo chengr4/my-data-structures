@@ -55,11 +55,11 @@ class MinHeap {
     this.storage[this.size] = value;
     this.size++;
     // ensure the element at the correct position
-    this.heapfiyUp();
+    this.heapifyUp();
   }
 
   // for insert
-  heapfiyUp() {
+  heapifyUp() {
     let currentIndex = this.size - 1;
     while (this.hasParent(currentIndex) && this.getParentValue(currentIndex) > this.storage[currentIndex]) {
       this.swapElement(this.getParentIndex, currentIndex);
@@ -76,13 +76,13 @@ class MinHeap {
     this.storage[0] = this.storage[this.size - 1];
     this.size--;
 
-    this.heapfiyDown();
+    this.heapifyDown();
 
     return data
   }
 
   // Compare from top to bottom, if conflicting, swap (swap with the smallest one)
-  heapfiyDown() {
+  heapifyDown() {
     // start at the root
     let currentIndex = 0;
 
