@@ -106,4 +106,13 @@ class MinHeap {
     }
   }
 
+  /**
+   * 把 array 轉換成 Heap
+   * Time complexity O(n)
+   */
+  heapify(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      this.insert(arr[i]);
+    }
+  }
 }
