@@ -27,7 +27,14 @@ Delete element from min heap eg
 
 ## Heapify
 
+把 array 轉換成 Heap
+
 - O(n)
+
+## How to use `heap.js`
+
+```hs
+```
 
 ## References
 
