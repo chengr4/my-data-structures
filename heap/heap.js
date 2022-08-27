@@ -9,7 +9,7 @@ class MinHeap {
   }
 
   getParentIndex(index) {
-    return Math.trunc((index - 1 / 2));
+    return Math.trunc(index - 1 / 2);
   }
 
   getLeftChildIndex(index) {
@@ -81,7 +81,7 @@ class MinHeap {
 
     this.heapifyDown();
 
-    return data
+    return data;
   }
 
   // Compare from top to bottom, if conflicting, swap (swap with the smallest one)
@@ -90,10 +90,16 @@ class MinHeap {
     let currentIndex = 0;
 
     // we only need to track left child because it it does not have a left child, it will not have a right child
-    while (this.hastLeftChild(currentIndex) && this.getParentValue(currentIndex) > this.storage[currentIndex]) {
+    while (
+      this.hastLeftChild(currentIndex) &&
+      this.getParentValue(currentIndex) > this.storage[currentIndex]
+    ) {
       let smallerChildIndex =
-        this.hasRightChild(currentIndex) && this.getRightChildValue(currentIndex) < this.getLeftChildValue(currentIndex)
-          ? this.getRightChildIndex(currentIndex) : this.getLeftChildIndex(currentIndex);
+        this.hasRightChild(currentIndex) &&
+        this.getRightChildValue(currentIndex) <
+          this.getLeftChildValue(currentIndex)
+          ? this.getRightChildIndex(currentIndex)
+          : this.getLeftChildIndex(currentIndex);
 
       if (this.storage[currentIndex] < this.storage[smallerChildIndex]) {
         // all good
