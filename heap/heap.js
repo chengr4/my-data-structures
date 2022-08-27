@@ -61,8 +61,11 @@ class MinHeap {
   // for insert
   heapifyUp() {
     let currentIndex = this.size - 1;
-    while (this.hasParent(currentIndex) && this.getParentValue(currentIndex) > this.storage[currentIndex]) {
-      this.swapElement(this.getParentIndex, currentIndex);
+    while (
+      this.hasParent(currentIndex) &&
+      this.getParentValue(currentIndex) > this.storage[currentIndex]
+    ) {
+      this.swapElement(this.getParentIndex(currentIndex), currentIndex);
       // move pointer to its parent
       currentIndex = this.getParentIndex(currentIndex);
     }
