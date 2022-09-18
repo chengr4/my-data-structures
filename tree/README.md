@@ -18,3 +18,23 @@
 - 必左邊 subtree 小，右邊 subtree 大
 
 > 用 leftSize 可以找第 `k` 大的值 (?)
+
+## Cheet Sheet
+
+BFS:
+
+```javasacript
+const queue = [root]; // root node
+
+while (queue.length > 0) {
+  // important to have, because we add child node to queue and size will be changed
+  const currentLevelQueueLen = queue.length;
+  for (let i = 0; i < currentLevelQueueLen; i++) {
+    let node = queue.shift();
+    if (node) {
+      queue.push(node.left);
+      queue.push(node.right);
+    }
+  }
+}
+```
