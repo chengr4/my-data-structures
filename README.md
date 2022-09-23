@@ -2,6 +2,8 @@
 
 - [Heap](./heap)
 - [Tree](./tree/)
+- [Linked List](./linked-list)
+- [Graph](./graph)
 
 ## References
 
