@@ -26,3 +26,7 @@ var reverseList = function (head) {
     curr = nextNode;
   }
 ```
+
+## References
+
+1. [你所不知道的 C 語言: linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list?fbclid=IwAR2wDVZx60cvbj9O1hrOEm1UfljFvetw5CgFNfsxrx07fJRrajaUhJb2Gkw)
