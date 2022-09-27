@@ -1,6 +1,5 @@
 # Linked list
 
-
 ## Cheet sheet
 
 reverse list
@@ -26,6 +25,14 @@ var reverseList = function (head) {
     curr = nextNode;
   }
 ```
+
+## Q/A 
+
+W: When to sort Linked List?
+
+eg. Linux Command `htop`
+
+> 衍生問題: merge sort (stable) vs quick sort (unstable) (??)
 
 ## References
 
