@@ -2,8 +2,8 @@
 
 ## Graph 最重要的兩種表示法
 
--Adjacency Matrix
--Adjacency List
+- Adjacency Matrix
+- Adjacency List
 
 > 儲存所有 node 之後可以產生應用，例如找出 spanning tree
 
