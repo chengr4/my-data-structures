@@ -5,6 +5,8 @@
 reverse list
 
 ```javascript
+// JavaScript
+
 // iterative
 // O(n), O(1)
 var reverseList = function (head) {
