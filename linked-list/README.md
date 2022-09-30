@@ -2,7 +2,7 @@
 
 ## Cheet sheet
 
-reverse list
+Reverse list:
 
 ```javascript
 // JavaScript
@@ -26,6 +26,21 @@ var reverseList = function (head) {
     // move to next node
     curr = nextNode;
   }
+```
+
+Find the middle node:
+
+```javascript
+// Javascript
+
+function findMiddle(head) {
+  let slow = head
+  let fast = head.next;
+  while(fast && fast.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+}
 ```
 
 ## Q/A 
