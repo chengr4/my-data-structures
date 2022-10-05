@@ -23,7 +23,7 @@
 
 BFS:
 
-```javasacript
+```javascript
 const queue = [root]; // root node
 
 while (queue.length > 0) {
