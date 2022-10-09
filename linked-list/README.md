@@ -1,5 +1,9 @@
 # Linked list
 
+## Related Algorithms
+
+- [Floyd's algorithm (tortoise and hare)](https://github.com/chengr4/my-algorithms/tree/main/others#floyds-tortoise--hare): Check cycle
+
 ## Cheet sheet
 
 Reverse list:
