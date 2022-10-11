@@ -4,6 +4,7 @@
 - [Tree](./tree/)
 - [Linked List](./linked-list)
 - [Graph](./graph)
+- [Trie](./trie/)
 
 ## References
 

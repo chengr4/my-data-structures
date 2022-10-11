@@ -1,0 +1,4 @@
+# Trie
+
+aka prefix tree
+
