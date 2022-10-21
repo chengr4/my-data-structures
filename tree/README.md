@@ -1,5 +1,15 @@
 # Tree
 
+```mermaid
+flowchart TD
+  tree --> DFS
+  tree --> BFS
+  DFS --> preorder("Preorder (root, left, right)")
+  DFS --> inorder("Inorder (left, root, right)")
+  DFS --> postorder("Postorder (left, right, root)")
+  BFS --> loop
+```
+
 ## Binary tree
 
 - The max number of nodes on level `i` of a binary tree is `2^(i-1)`, `i>=1`
