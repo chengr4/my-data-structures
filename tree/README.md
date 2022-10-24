@@ -29,6 +29,11 @@ flowchart TD
 
 > 用 leftSize 可以找第 `k` 大的值 (?)
 
+## B+ Tree
+
+- B+ tree 能夠保持資料穩定有序，其插入與修改擁有較穩定的對數時間複雜度
+- B+ tree 元素由下而上插入 (vs Binary tree: top-down)
+
 ## Cheet Sheet
 
 BFS:
