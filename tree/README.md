@@ -29,10 +29,36 @@ flowchart TD
 
 > 用 leftSize 可以找第 `k` 大的值 (?)
 
+- Array can use Binary Search and List 可以解決 Array 的新增效率問題 => BST 兼具兩者
+
+> search, add, delete are all `log(n)`
+
+### Balanced BST
+
+- Bad for I/O, therefore, InnoDB does not pick it as data storage
+
+## B Tree
+
+一顆 m 階的 b 樹基本上有以下特點:
+
+- 每個節點內最多有 m - 1 個內部節點
+- 每個節點最多有 m 個子樹
+- 每個內部節點都有儲放完整資料
+- 每個節點內的內部節點，都是依順序排序
+
 ## B+ Tree
 
 - B+ tree 能夠保持資料穩定有序，其插入與修改擁有較穩定的對數時間複雜度
 - B+ tree 元素由下而上插入 (vs Binary tree: top-down)
+- B+ tree 比 B tree 更加穩定，因為一定都要至葉子節點才能取得資料
+
+假設我們有一顆 m 階的 b+ 樹，它和 b 樹相比，有以下幾個特點:
+
+- 每個節點，最多只能有 M 個子樹
+- 每個節點中的內部節點，最多只能有 M - 1 個
+- 每個非葉子節點(就是非最底層的節點)，只儲 index reference
+- 每個葉子節點(就是最底層的節點)，儲放了實際資料
+- 每個葉子節點(就是最底層的節點)，會包含一個指針，指向右邊的葉子節點
 
 ## Cheet Sheet
 
@@ -53,3 +79,7 @@ while (queue.length > 0) {
   }
 }
 ```
+
+## References
+
+- [馬克;30-11 之資料庫層的核心 - 索引結構演化論 B+樹 (2019.12)](https://mark-lin.com/posts/20190911/)
