@@ -5,6 +5,7 @@
 - [Linked List](./linked-list)
 - [Graph](./graph)
 - [Trie](./trie/)
+- [Union Find](./uf/)
 
 ## References
 
