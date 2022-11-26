@@ -17,6 +17,8 @@ right child index: 2*index+2
 
 ## Deletion
 
+- O(log n)
+
 Flow:
 
 Delete element from min heap eg
