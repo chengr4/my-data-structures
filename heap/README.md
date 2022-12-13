@@ -15,6 +15,14 @@ left child index: 2*index+1
 right child index: 2*index+2
 ```
 
+## Time Complexity
+
+| Operation | time |
+| --------- | ---- |
+| Insertion | avg. `O(log(n))` |
+| Deletion | avg. `O(log(n))` |
+| Searching | avg. `O(n)` |
+
 ## Deletion
 
 - O(log n)
