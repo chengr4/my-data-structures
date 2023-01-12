@@ -15,6 +15,10 @@ left child index: 2*index+1
 right child index: 2*index+2
 ```
 
+## Advantage
+
+- Great find the most frequent element
+
 ## Time Complexity
 
 | Operation | time |
@@ -25,7 +29,7 @@ right child index: 2*index+2
 
 ## Deletion
 
-- O(log n)
+- `O(log(n))`
 
 Flow:
 
