@@ -17,11 +17,10 @@ var reverseList = function (head) {
   if (head === null) return null;
   let pre = null;
   let curr = head;
-  let tempNode = null;
 
   while (curr) {
     // save into temp node for next loop in advance
-    tempNode = curr.next
+    const tempNode = curr.next
     // make current pointer direct to reverse direction
     curr.next = pre;
     // move pre to curr
