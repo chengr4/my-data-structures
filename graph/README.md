@@ -14,6 +14,23 @@
 - 可以用 DFS, BFS 找出 spanning tree
 - no cycle
 
+## Build Adjacency List
+
+- Will give edges and nodes to build it
+
+```javascript
+// Eg JavaScript
+
+const node = 3;
+const edges = [[0,1],[1,2],[2,0]];
+const adjacencyList = new Array(n).fill(0).map(() => new Array());
+for (const [v1, v2] of edges) {
+  graph[v1].push(v2);
+  graph[v2].push(v1);
+}
+
+```
+
 ## Algorithms
 
 TO [My Algorithms](https://github.com/chengr4/my-algorithms/tree/main/graph)
