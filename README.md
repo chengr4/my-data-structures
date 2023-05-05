@@ -6,6 +6,7 @@
 - [Graph](./graph)
 - [Trie](./trie/)
 - [Union Find](./uf/)
+- [Hash Map](./hash-map/)
 
 ## References
 
