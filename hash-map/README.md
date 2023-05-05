@@ -1,6 +1,7 @@
 # Hash Map
 
 ```golang
+// Golang
 myMap := make(map[int]int)
 
 // iterate elements in the map
