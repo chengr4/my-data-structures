@@ -65,6 +65,7 @@ flowchart TD
 BFS:
 
 ```javascript
+// javascript
 const queue = [root]; // root node
 
 while (queue.length > 0) {
@@ -76,7 +77,29 @@ while (queue.length > 0) {
       queue.push(node.left);
       queue.push(node.right);
     }
+    
+    // do other logic
   }
+}
+```
+
+```golang
+// golang
+queue := []*TreeNode{root}
+
+for len(queue) > 0 {
+  levelLength := len(queue)
+	for i := 0; i < levelLength; i++ {
+	  node := queue[0]
+		queue = queue[1:]
+		
+    if node != nil {
+				queue = append(queue, node.Left)
+				queue = append(queue, node.Right)
+		}
+    
+    // do other logic
+	}
 }
 ```
 
