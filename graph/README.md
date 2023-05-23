@@ -23,10 +23,22 @@
 
 const node = 3;
 const edges = [[0,1],[1,2],[2,0]];
+const adjacencyList = {};
+for (let i = 0; i < n; i++) {
+  adjacencyList[i] = [];
+}
+for (const e of edges) {
+  adjacencyList[e[0]].push(e[1]);
+  adjacencyList[e[1]].push(e[0]);
+}
+
+// another way !?
+const node = 3;
+const edges = [[0,1],[1,2],[2,0]];
 const adjacencyList = new Array(n).fill(0).map(() => new Array());
 for (const [v1, v2] of edges) {
-  graph[v1].push(v2);
-  graph[v2].push(v1);
+  adjacencyList[v1].push(v2);
+  adjacencyList[v2].push(v1);
 }
 
 ```
