@@ -75,9 +75,9 @@ while (!que.isEmpty()) {
   for (let i = 0; i < currentLevelQueueLen; i++) {
     let node = que.dequeue();
     if (node) {
-			// do some logic
-			queue.enqueue(node.left);
-     	queue.enqueue(node.right);
+      // do some logic
+      queue.enqueue(node.left);
+    	queue.enqueue(node.right);
     }
     
     // do other logic
