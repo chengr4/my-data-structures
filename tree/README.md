@@ -66,16 +66,18 @@ BFS:
 
 ```javascript
 // javascript
-const queue = [root]; // root node
+const que = new Queue();
+que.enqueue(root); // root node
 
-while (queue.length > 0) {
+while (!que.isEmpty()) {
   // important to have, because we add child node to queue and size will be changed
-  const currentLevelQueueLen = queue.length;
+  const currentLevelQueueLen = que.size();
   for (let i = 0; i < currentLevelQueueLen; i++) {
-    let node = queue.shift();
+    let node = que.dequeue();
     if (node) {
-      queue.push(node.left);
-      queue.push(node.right);
+			// do some logic
+			queue.enqueue(node.left);
+     	queue.enqueue(node.right);
     }
     
     // do other logic
