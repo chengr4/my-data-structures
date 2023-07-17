@@ -29,6 +29,7 @@ var reverseList = function (head) {
     // move to next node
     curr = tempNode;
   }
+}
 ```
 
 Find the middle node:
