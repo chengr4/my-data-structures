@@ -60,7 +60,7 @@ flowchart TD
 - 每個葉子節點(就是最底層的節點)，儲放了實際資料
 - 每個葉子節點(就是最底層的節點)，會包含一個指針，指向右邊的葉子節點
 
-## Cheet Sheet
+## Cheat Sheet
 
 BFS:
 
@@ -102,6 +102,26 @@ for len(queue) > 0 {
     
     // do other logic
 	}
+}
+```
+
+DFS iterative:
+
+```javascript
+// javascript
+const stack = []; // stack
+let currRoot = root
+
+while (currRoot || !stack.length > 0) {
+  while (currRoot) {
+    // do some logic
+    stack.push(currRoot);
+    currRoot = currRoot.left;
+  }
+  
+  currRoot = stack.pop();
+  // do other logic
+  currRoot = currRoot.right;
 }
 ```
 
