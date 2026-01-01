@@ -4,11 +4,15 @@
 flowchart TD
   tree --> DFS
   tree --> BFS
-  DFS --> preorder("Preorder (root, left, right)")
   DFS --> inorder("Inorder (left, root, right)")
+  DFS --> preorder("Preorder (root, left, right)")
   DFS --> postorder("Postorder (left, right, root)")
   BFS --> loop
 ```
+
+## Application - Expression Tree
+
+- Post-Order Traversal can be used to make a postfix expression that can be translated into machine code to be evaluated on the stack
 
 ## Binary tree
 
@@ -19,23 +23,11 @@ flowchart TD
 
 ## Full BT and Complete BT
 
-- Full BT: 滿節點的樹
+- Full BT: 節點只會有 0 或 2 個子節點
+- Perfect BT: A full binary tree where all the leaves are at the same depth (每個節點都有 2 個子節點)
+    - Leaves: 2^h
+    - Total nodes: 2^(h+1) - 1
 - Complete BT: 由上至下，有左至右編號的樹
-
-## Binary search tree
-
-- `==` ordered/sorted binary tree
-- 必左邊 subtree 小，右邊 subtree 大
-
-> 用 leftSize 可以找第 `k` 大的值 (?)
-
-- Array can use Binary Search and List 可以解決 Array 的新增效率問題 => BST 兼具兩者
-
-> search, add, delete are all `log(n)`
-
-### Balanced BST
-
-- Bad for I/O, therefore, InnoDB does not pick it as data storage
 
 ## B Tree
 
