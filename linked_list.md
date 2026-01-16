@@ -1,5 +1,7 @@
 # Linked list
 
+- 如果確定 head 永遠不會被改變，可以不需要 dummy node。
+
 ## Related Algorithms
 
 - [Floyd's algorithm (tortoise and hare)](https://github.com/chengr4/my-algorithms/tree/main/others#floyds-tortoise--hare): Check cycle
