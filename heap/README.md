@@ -87,7 +87,7 @@ $$T(n) = 2T(n/2)+O(log n)$$
 - An ADT
 - 通常用 Heap 實現
 
-see [pq.md](../pq.md)
+see [pq/](../pq/)
 
 ## References
 
